@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<c3p0-config>
+	<default-config> 
+		<!-- 连接池的底层封装的也是JDBC -->
+		<property name="jdbcUrl">jdbc:mysql://localhost:3306/hotel?characterEncoding=utf8&amp;useSSL=false&amp;serverTimezone=UTC&amp;rewriteBatchedStatements=true</property>
+		<property name="driverClass">com.mysql.cj.jdbc.Driver</property>
+		<property name="user">root</property>
+		<property name="password">12345678</property>
+		
+		<property name="acquireIncrement">3</property>
+		<property name="initialPoolSize">10</property><!-- 连接池初始容量 -->
+		<property name="minPoolSize">2</property><!-- 最小保存数量  当现有连接数据达到最小标准的时候 连接池会主动创建连接-->
+		<property name="maxPoolSize">10</property><!-- 最大容量 -->
+	</default-config>
+</c3p0-config>
+<!-- 组长写的注释 -->
+<!-- c3p0连接池配置信息 -->
